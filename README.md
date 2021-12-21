@@ -7,4 +7,4 @@ Bug:
 
 -pour les crédits les caractères japonais ne s'affichent pas
 
--dans le jeu 2D si on pause puis relance ça reset la stopwatch et il tire directement
+-dans le jeu 2D si on pause puis relance ça reset la stopwatch et donc si enemy est sur la map il tire directement
