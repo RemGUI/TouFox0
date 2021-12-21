@@ -9,7 +9,7 @@ using System.Threading;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance = null;
-    public GameOverScript GameOverScript;
+    public Gameclear GameOverScript;
     public Gameclear Gameclear;
 
     [SerializeField] Slider healthBar;
@@ -46,6 +46,13 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("score", score);
         if (PlayerPrefs.GetInt("score")>PlayerPrefs.GetInt("highScore"))
             PlayerPrefs.SetInt("highScore", PlayerPrefs.GetInt("score"));
+    }
+
+    void OnDisable2()//pour passer les score et highscore d'un scene a une autre
+    {
+        PlayerPrefs.SetInt("scores", score);
+        if (PlayerPrefs.GetInt("scores") > PlayerPrefs.GetInt("highScores"))
+            PlayerPrefs.SetInt("highScores", PlayerPrefs.GetInt("scores"));
     }
 
     // Update is called once per frame
@@ -91,6 +98,7 @@ public class GameManager : MonoBehaviour
             }
             if("Foxproject" == SceneManager.GetActiveScene().name)
             {
+                OnDisable2();
                 GameOver2();
             }
         }   
