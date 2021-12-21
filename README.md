@@ -9,4 +9,4 @@ Bug:
 
 -dans le jeu 2D si on pause puis relance la stopwatch continue de tourner et donc si un enemy est sur la map il tire directement apres la fin de la pause
 
--WebGL cree des problemes d'affichage quand j ai pas le haut du jeu j ai les bords et inversement(du coup j ai prefere choisir les bords plutots que le haut)
+-WebGL crée des problèmes d'affichage quand j ai pas le haut du jeu j ai les bords et inversement(du coup j ai prefere choisir les bords plutôt que le haut)
