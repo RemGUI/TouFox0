@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetInt("highScore", PlayerPrefs.GetInt("score"));
     }
 
-    void OnDisable2()//pour passer les score et highscore d'un scene a une autre
+    public void OnDisable2()//pour passer les score et highscore d'un scene a une autre
     {
         PlayerPrefs.SetInt("scores", score);
         if (PlayerPrefs.GetInt("scores") > PlayerPrefs.GetInt("highScores"))

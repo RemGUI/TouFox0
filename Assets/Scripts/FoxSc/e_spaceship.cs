@@ -37,6 +37,7 @@ public class e_spaceship : MonoBehaviour//script pour géré le boss
         e_life = e_life - 1;
         if (e_life <= 0)
         {
+            GameManager.instance.OnDisable2();
             Destroy(gameObject);
             GameManager.instance.Victory();
         }

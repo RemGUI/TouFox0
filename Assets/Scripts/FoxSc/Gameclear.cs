@@ -18,8 +18,8 @@ public class Gameclear : MonoBehaviour//script pour faire apparaitre le screen d
     public void Setup(int score)
     {
         gameObject.SetActive(true);//pour faire apparaitre le screen
-        pointsText.text = score.ToString() + " POINTS";//pour affiché le score du jeu
-        highText.text = "HighScore" + highScore.ToString() + " POINTS";
+        pointsText.text = "    Score "+ score.ToString() + " POINTS";//pour affiché le score du jeu
+        highText.text = "HighScore " + highScore.ToString() + " POINTS";
     }
     public void RestartButton()//fonction pour faire fonctioné le bouton restart du l'ecran victory 
     {
